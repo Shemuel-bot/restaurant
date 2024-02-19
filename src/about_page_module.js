@@ -1,9 +1,14 @@
 function AboutPage(){
+    const buttons=Array.from(document.querySelectorAll('button'));
+    buttons.map((x)=>x.style.backgroundColor = '#dc2626');
+    document.body.style.background = 'url(../src/menu_images/panda_pizza.jpg)';
     document.getElementById('content').remove();
 
     const content = document.createElement('div');
     content.id = 'content';
     document.body.appendChild(content);
+    document.getElementById('content').style.backgroundColor = '#f87171';
+    document.querySelector('nav').style.backgroundColor = '#f87171';
 
     const header = document.createElement('h1');
     header.textContent = 'Contacts';

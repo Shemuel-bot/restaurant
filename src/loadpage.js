@@ -1,11 +1,16 @@
 import Icon from './icon.png';
 
 function Components(){
+    const buttons=Array.from(document.querySelectorAll('button'));
+    buttons.map((x)=>x.style.backgroundColor = '#84cc16');
+    document.body.style.background = 'url(../src/menu_images/bamboo_sushi.jpg)';
     document.getElementById('content').remove();
 
     const content = document.createElement('div');
     content.id = 'content';
     document.body.appendChild(content);
+    document.getElementById('content').style.backgroundColor = '#bef264';
+    document.querySelector('nav').style.backgroundColor = '#bef264';
 
     const logo = document.createElement('img');
     logo.src = Icon;

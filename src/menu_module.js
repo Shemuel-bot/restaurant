@@ -1,5 +1,8 @@
 
 function MakeImage(){
+    const buttons=Array.from(document.querySelectorAll('button'));
+    buttons.map((x)=>x.style.backgroundColor = '#fdba74');
+    document.body.style.background = 'url(../src/menu_images/panda_pasta.jpg)';
     document.getElementById('content').remove();
     //imports menu images
     function importAll(r) {
@@ -12,6 +15,8 @@ function MakeImage(){
     const content = document.createElement('div');
     content.id = 'content';
     document.body.appendChild(content);
+    document.getElementById('content').style.backgroundColor = '#ffedd5';
+    document.querySelector('nav').style.backgroundColor = '#ffedd5';
 
     //displays images and titles
     for (let index = 0; index < 5; index++) {
