@@ -4,7 +4,6 @@
 }
 body{
     font-family: webFont, 'Courier New', Courier, monospace;
-    background: url('./menu_images/bamboo_sushi.jpg');
     flex-direction: column;
     display: flex;
     align-items: center;   

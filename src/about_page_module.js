@@ -1,7 +1,7 @@
 function AboutPage(){
     const buttons=Array.from(document.querySelectorAll('button'));
     buttons.map((x)=>x.style.backgroundColor = '#dc2626');
-    document.body.style.background = 'url(../src/menu_images/panda_pizza.jpg)';
+    document.body.style.background = 'url(./14e917d67af3ebbaec1d.jpg)';
     document.getElementById('content').remove();
 
     const content = document.createElement('div');

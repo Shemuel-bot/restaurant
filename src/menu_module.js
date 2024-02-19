@@ -2,7 +2,7 @@
 function MakeImage(){
     const buttons=Array.from(document.querySelectorAll('button'));
     buttons.map((x)=>x.style.backgroundColor = '#fdba74');
-    document.body.style.background = 'url(../src/menu_images/panda_pasta.jpg)';
+    document.body.style.background = 'url(./f351a2c017805f082840.jpg)';
     document.getElementById('content').remove();
     //imports menu images
     function importAll(r) {

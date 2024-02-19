@@ -3,7 +3,7 @@ import Icon from './icon.png';
 function Components(){
     const buttons=Array.from(document.querySelectorAll('button'));
     buttons.map((x)=>x.style.backgroundColor = '#84cc16');
-    document.body.style.background = 'url(../src/menu_images/bamboo_sushi.jpg)';
+    document.body.style.background = 'url(./d6a798c7683227b549bf.jpg)';
     document.getElementById('content').remove();
 
     const content = document.createElement('div');
