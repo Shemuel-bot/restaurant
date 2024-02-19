@@ -25,8 +25,8 @@ function MakeImage(){
             case 4:menuItem.src=images['panda-stew.jpg'];itemHeader.textContent='Panda Stew';break;
         }
         menuItem.classList.add('menu-item');
-        document.getElementById('content').appendChild(itemHeader);
-        document.getElementById('content').appendChild(menuItem);
+        content.appendChild(itemHeader);
+        content.appendChild(menuItem);
     }   
 }
 export{MakeImage}

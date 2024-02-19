@@ -9,12 +9,12 @@ function Components(){
 
     const logo = document.createElement('img');
     logo.src = Icon;
-    document.querySelector('#content').appendChild(logo);
+    content.appendChild(logo);
     logo.classList.add('profile');
 
     const header = document.createElement('h1');
     header.textContent='Panda & Bear Restaurant';
-    document.querySelector('#content').appendChild(header);
+    content.appendChild(header);
     for (let index = 0; index < 8; index++) {
         const description = document.createElement('p');
         switch (index) {
