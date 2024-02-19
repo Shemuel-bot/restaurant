@@ -5,13 +5,18 @@
 body{
     font-family: webFont, 'Courier New', Courier, monospace;
     background-color: #f1f5f9;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 nav{
     display: flex;
     justify-content: center;
     gap: 10rem;
+    background-color: #f3f4f6;
+    border-radius: 10PX;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(187, 187, 187, 0.596);
 }
 button{
     background-color: #cbd5e1;
@@ -22,6 +27,8 @@ button{
     margin: 20px;
     box-shadow: 0px 4px 10px rgba(173, 173, 173, 0.637);
 }
+button:hover{background-color: #cbd5e1b6;}
+h2{margin-top: 20px;}
 p{margin-left: 10px; margin-bottom: 20px;}
 #content{
     background-color: rgb(255, 255, 255);
@@ -31,8 +38,19 @@ p{margin-left: 10px; margin-bottom: 20px;}
     align-items: center;
     box-shadow: 0px 8px 10px rgba(184, 184, 184, 0.432);
     width: 40vw;
+    border-radius: 8px;
+}
+.menu-item{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(141, 141, 141, 0.644);
 }
 .profile{
+    margin-top: 10px;
     width: 150px;
     height: 150px;
 }

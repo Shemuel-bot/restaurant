@@ -1,15 +1,20 @@
 import Icon from './icon.png';
 
 function Components(){
+    document.getElementById('content').remove();
+
+    const content = document.createElement('div');
+    content.id = 'content';
+    document.body.appendChild(content);
+
     const logo = document.createElement('img');
     logo.src = Icon;
     document.querySelector('#content').appendChild(logo);
     logo.classList.add('profile');
 
     const header = document.createElement('h1');
-    header.textContent='Panda & Bear Restaurant'
+    header.textContent='Panda & Bear Restaurant';
     document.querySelector('#content').appendChild(header);
-
     for (let index = 0; index < 8; index++) {
         const description = document.createElement('p');
         switch (index) {
@@ -23,7 +28,6 @@ function Components(){
             case 7:description.textContent="Panda & Bear – Where Every Bite is a Celebration of panda!";break;
         }
         document.querySelector('#content').appendChild(description);
-    }
-    
+    }  
 }
 export{Components}
